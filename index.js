@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
 
         SecoesTotalizadasPB: dataGov.data.pst + '%',
         AbstencaoPB: dataGov.data.pa + '%',
-        Joao: dataGov.data.cand[0].pvap +'%',
+        Joao: dataGov.data.cand[0].pvap +'%' + ' (Eleito)',
         Votos1PB: dataGov.data.cand[0].vap,
         Pedro: dataGov.data.cand[1].pvap +'%',
         Votos2PB: dataGov.data.cand[1].vap
