@@ -14,8 +14,10 @@ app.get('/', async (req, res) => {
         Hora: data.ht,
         SecoesTotalizadas: data.pst + '%',
         Abstencao: data.pa + '%',
-        LULA: data.cand[0].pvap +'%', 
-        BOLSONARO: data.cand[1].pvap +'%'
+        LULA: data.cand[0].pvap +'%',
+        Votos1: data.cand[0].vap,
+        BOLSONARO: data.cand[1].pvap +'%',
+        Votos2: data.cand[1].vap,
     })
 });
 
